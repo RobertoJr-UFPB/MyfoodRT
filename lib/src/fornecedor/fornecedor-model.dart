@@ -1,10 +1,15 @@
 import '../cadastro/endereco.dart';
 
 class FornecedorModel{
-  final String email;
-  final String name;
-  final Endereco endereco;
-  final String cpf;
+   String email;
+   String nome;
+   Endereco endereco;
+   String cpf;
 
-  CadastroFornecedorModel(this.email, this.name, this.endereco, this.cpf);
+  ClienteModel(String email, String nome, Endereco endereco, String cpf){
+    this.email=email;
+    this.nome=nome;
+    this.endereco=endereco;
+    this.cpf=cpf;
+  }
 }
