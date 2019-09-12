@@ -91,11 +91,30 @@
     <!-- Cadastrar Produto -->
     <section id="cadastro-produto">
         <h3>Cadastrar Produto</h3>
-        <div class="row">
+        <div class="row form-crud-produto">
             <div class="col-6">
-                
+                <input class="form-control" type="text" placeholder="Nome">
+            </div>
+            <div class="col-6">
+                <input class="form-control" type="text" placeholder="Valor">
             </div>
         </div>
+        <div class="row form-crud-produto">
+            <div class="col-12">
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Descrição"></textarea>
+            </div>
+        </div>
+        <!-- <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+           <input type="file" name="image">
+        </form> -->
+        <div id="img-form-edit"class="row form-crud-produto">
+                <div class="col-12">
+                    <img id="img-produto-edit" src="../img/home/slidefornecedores/pizza.jpeg" alt="">
+                    <input id="input-img" type="file" name="image">
+                </div>
+                
+        </div>  
+        <button type="submit" class="btn btn-primary btn-submeter">Cadastrar</button>     
     </section>
     <!-- Fim Cadastrar Produto -->
     <footer>
