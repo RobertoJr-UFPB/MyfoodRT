@@ -9,7 +9,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../style-home.css">
-    <link rel="stylesheet" href="./cardapio-style.css">
+    <link rel="stylesheet" href="./edit-perfil.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -88,35 +88,57 @@
     </div>
     <!-- Fim NavBar -->
 
-    <!-- Cadastrar Produto -->
-    <section id="cadastro-produto">
-        <h3>Modificar Produto</h3>
-        <div class="row form-crud-produto">
-            <div class="col-6">
-                <input class="form-control" type="text" placeholder="Nome">
-            </div>
-            <div class="col-6">
-                <input class="form-control" type="text" placeholder="Valor">
-            </div>
-        </div>
-        <div class="row form-crud-produto">
-            <div class="col-12">
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Descrição"></textarea>
-            </div>
-        </div>
-        <!-- <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
-           <input type="file" name="image">
-        </form> -->
-        <div id="img-form-edit"class="row form-crud-produto">
-                <div class="col-12">
-                    <img id="img-produto-edit" src="../img/home/slidefornecedores/pizza.jpeg" alt="">
-                    <input id="input-img" type="file" name="image">
+    <!-- Editar Perfil Cliente -->
+    <section id="edit-perfil-form">
+        <h3>Edição de Perfil</h3>
+        <form>
+            <div class="form-group ">
+                    <input type="text" class="form-control form-radius " id="exampleInputEmail1" 
+                        placeholder="Nome">
+
                 </div>
-                
-        </div>  
-        <button type="submit" class="btn btn-primary btn-submeter">Cadastrar</button>     
+            <div class="form-group ">
+                <input type="email" class="form-control form-radius " id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Email">
+
+            </div>
+            <div class="form-group ">
+                <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Senha">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                        <div class="form-group ">
+                                <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Rua">
+                        </div>
+                </div>
+                <div class="col-4">
+                        <div class="form-group ">
+                                <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Número">
+                        </div>
+                </div>
+                <div class="col-4">
+                        <div class="form-group ">
+                                <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Bairro">
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-6">
+                            <div class="form-group ">
+                                    <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Cidade">
+                            </div>
+                    </div>
+                    <div class="col-6">
+                            <div class="form-group ">
+                                    <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Cep">
+                            </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submeter">Salvar</button>      
+        </form>
+        
     </section>
-    <!-- Fim Cadastrar Produto -->
+    <!-- Editar Perfil Cliente -->
     <footer>
         <div class="row">
             <div class="col-2">
