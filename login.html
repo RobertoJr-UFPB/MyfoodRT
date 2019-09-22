@@ -31,7 +31,7 @@
                 <div class="form-group ">
                     <input type="password" class="form-control form-radius" id="exampleInputPassword1" placeholder="Senha" name="psw">
                 </div>
-                <button type="submit" onclick="check(this.form)" class="btn btn-primary btn-submeter">Sing in</button>
+                <button type="submit" onclick="check(this.form)" class="btn btn-primary btn-submeter">Entrar</button>
                 <h6>Clique aqui para fazer seu cadastro.</h6>
                 <img id="churrasqueira"src="./img/churrasqueira.png" alt="">
             </form>
@@ -40,13 +40,17 @@
     			<!-- Login Fornecedor e Cliente -->
                 <script language="JavaScript">
                 function check(form)
+
                     {
+						console.log("entrei...", form)
                         if(form.email.value == "cliente@gmail.com" && form.psw.value == "123")
                 			{
+                				console.log("entrei...1")
                 				window.open('./home')
-                			}
-                		elif(form.email.value == "fornecedor@gmail.com" && form.psw.value == "123")
+                			} 
+                		if(form.email.value == "fornecedor@gmail.com" && form.psw.value == "123")
                 			{
+                				console.log("entrei...2")
                 				window.open('./home')
 	            			}
 	            		else
