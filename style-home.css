@@ -17,6 +17,16 @@ body{
 #input-pesquisa::-webkit-input-placeholder {
     color: white;
  }
+ #form-pesquisa{
+    background-color: #F95F62;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    color:white;
+   
+
+}
  /* NavVertical */
  #nav-vertical{
     float: right;

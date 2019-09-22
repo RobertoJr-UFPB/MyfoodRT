@@ -21,6 +21,7 @@ body{
 #input-pesquisa::-webkit-input-placeholder {
     color: white;
  }
+
  /* NavVertical */
  #nav-vertical{
     float: right;

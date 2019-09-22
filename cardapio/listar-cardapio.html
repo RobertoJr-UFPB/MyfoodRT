@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style-home.css">
+    <link rel="stylesheet" href="../style-home.css">
+    <link rel="stylesheet" href="./cardapio-style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,205 +22,161 @@
 <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" style="height: 80px;width: 80px;margin: -30px"
-                alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fornecedores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carrinho</a>
-                </li>
-
-                <form class="form-inline my-2 my-lg-0">
-
-                    <input id="input-pesquisa" class="form-control mr-sm-2" type="search"
-                        placeholder="&#128269 Pesquisar" aria-label="Search">
-
-                </form>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Filtros
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Sobremesa</a>
-                        <a class="dropdown-item" href="#">Hamburguer</a>
-                        <a class="dropdown-item" href="#">Pizza</a>
-                    </div>
-                </li>
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" style="height: 80px;width: 80px;margin: -30px"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrinho</a>
+                    </li>
+    
+                    <form id="form-pesquisa" class="form-inline my-2 my-lg-0">
+    
+                        <i style="margin-right: 10px;" class="fas fa-search"></i>
+    
+    
+                        <input style="border:none; box-shadow: 0 0 0 0;border: 0 none;outline: 0;color:white;" id="input-pesquisa" class="form-control mr-sm-2" type="search"
+                            placeholder=" Pesquisar" aria-label="Search">
+    
+                    </form>
+            </div>
+    
+    
+    
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Filtros
+                </a>
+    
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Sobremesa</a>
+                    <a class="dropdown-item" href="#">Hamburguer</a>
+                    <a class="dropdown-item" href="#">Pizza</a>
+                </div>
+            </div>
             </ul>
-            <img onclick="showNav()" id="persona" style="height: 50px;width:50px;" src="./img/home/persona.png" alt="">
+            <img onclick="showNav()" id="persona" style="height: 50px;width:50px;" src="../img/home/persona.png" alt="">
             <ul class="navbar-nav ">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="showNav()">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" onclick="showNav()">
                         Nome
                     </a>
                 </li>
             </ul>
-
-        </div>
-
-    </nav>
-
-    <div id="nav-vertical">
-        <img style="color:#F95F62;height: 40px;width: 40px;float: right;" onclick="escondeNav()"
-            src="./img/home/times-solid.svg" alt="">
-
-
-        <nav style="margin-top: 50px;" class="nav flex-column">
-            <a class="nav-link" href="#">Editar Perfil</a>
-            <a class="nav-link" href="#">Histórico de Pedidos</a>
-            <a class="nav-link" href="#">Cardápio</a>
-            <a class="nav-link " href="#">Sair</a>
-        </nav>
-    </div>
-    <!-- Fim NavBar -->
-
-    <!-- Section Apresentação -->
-    <section id="apresentacao" class="background-laranja">
-        <h1>Delivery Rápido de Verdade em Rio Tinto?</h1>
-        <button id="btn-vamos-nessa" type="button" class="btn btn-primary"> Vamos Nessa!!!</button>
-    </section>
-    <!-- Fim Apresentação -->
-    <!-- Slide Fornecedores -->
-    <section id="slide-fornecedores">
-        <h1>Fornecedores</h1>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/legumes.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Legumes da Tia</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/pizza.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Pizza da Boa</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/hamburguer.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Hamburguer e Cia</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/legumes.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Legumes da Tia</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/pizza.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Pizza da Boa</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/hamburguer.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Hamburguer e Cia</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/legumes.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Legumes da Tia</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/pizza.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Pizza da Boa</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="./img/home/slidefornecedores/hamburguer.jpeg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Hamburguer e Cia</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    
             </div>
-            <a style="height: 50px;"class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-
-                <img class="seta-slide" src="img/home/slide1.png" aria-hidden="true" alt="">
-                <span style="background-color:black" class="sr-only">Previous</span>
-            </a>
-            <a style="height: 50px;"class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <img class="seta-slide" src="img/home/slide2.png"  alt="">
-                <span class="sr-only">Next</span>
-            </a>
+    
+        </nav>
+    
+        <div id="nav-vertical">
+            <img style="color:#F95F62;height: 40px;width: 40px;float: right;" onclick="escondeNav()"
+                src="../img/home/times-solid.svg" alt="">
+    
+    
+            <nav style="margin-top: 50px;" class="nav flex-column">
+                <a class="nav-link" href="#">Editar Perfil</a>
+                <a class="nav-link" href="#">Histórico de Pedidos</a>
+                <a class="nav-link" href="#">Cardápio</a>
+                <a class="nav-link " href="#">Sair</a>
+            </nav>
         </div>
+        <!-- Fim NavBar -->
+    <!-- Cadastrar Produto -->
+    <section id="listar-produto">
+    	<div align="center"><p class="h2">Cardapio</p></div>
+
+        <table class="table table-hover">
+		  <thead>
+		    <tr><tr class="p-3 mb-2 bg-danger text-white">
+            	<td scope="col">#</td>
+		      	<td scope="col">Nome</td>
+		      	<td scope="col">Editar</td>
+		      	<td scope="col">Remover</td>
+		    </tr>
+		</tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>Pizza</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td> <!--add imagem editar-->
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td> <!--ADD imagem lixeira-->
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>Bolo</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>Suco de Laranja</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">4</th>
+		      <td>Hanburguer</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    <tr>
+		      <th scope="row">5</th>
+		      <td>Refrigerante</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    <tr>
+		      <th scope="row">6</th>
+		      <td>Bolo de Chocolate</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">7</th>
+		      <td>Pastel de Frango</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">8</th>
+		      <td>Escondidinho de Macacheira com Carne de Sol</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		    <tr>
+		      <th scope="row">9</th>
+		      <td>Torda de Camarão</td>
+		      	<td><a href=""><img class="img-footer" src= "../img/home/lapis-caderno.png"alt=""></a></td>
+		      	<td><a href=""><img class="img-footer" src="../img/home/lx3.png"alt=""></a></td>
+		    </tr>
+		  </tbody>
+		</table>
+
+        <!-- <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+           <input type="file" name="image">
+        </form> -->
+        <div id="img-form-edit"class="row form-crud-produto">
+                
+        </div>  
+        <div align="center"><button type="submit" class="btn btn-primary btn-submeter">Adicinar Novo Produto</button></div>    
     </section>
-    <!-- Fim Slide Fornecedores -->
+    <!-- Fim Cadastrar Produto -->
     <footer>
         <div class="row">
             <div class="col-2">
-                <img id="logo-footer" src="img/logo.png" alt="">
+                <img id="logo-footer" src="../img/logo.png" alt="">
             </div>
             <div class="col-2"></div>
             <div id="links-footer" class="col-2">
@@ -231,35 +188,14 @@
             <div class="col-2"></div>
             <div class="col-4">
                 <h1>Fale Conosco</h1>
-                  <a href=""> <img class="img-footer" src="./img/home/footer/face.png" alt=""></a>
-                  <a href=""><img class="img-footer" src="./img/home/footer/instagram.png" alt=""></a>
-                  <a href=""><img class="img-footer" src="./img/home/footer/twitter.png" alt=""></a>
-                  <a href=""><img class="img-footer" src="./img/home/footer/youtube.png" alt=""></a>
+                  <a href=""> <img class="img-footer" src="../img/home/footer/face.png" alt=""></a>
+                  <a href=""><img class="img-footer" src="../img/home/footer/instagram.png" alt=""></a>
+                  <a href=""><img class="img-footer" src="../img/home/footer/twitter.png" alt=""></a>
+                  <a href=""><img class="img-footer" src="../img/home/footer/youtube.png" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
         function showNav() {
