@@ -92,3 +92,63 @@ input#estrela2 + label {
   input#estrela5:checked + label {
       background-image: url('./img/estrelaamarela.png');
   }
+  input#estrela6 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela6:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela7 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela7:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela8 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela8:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela9 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrel9:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela10 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela10:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela11 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela11:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela12 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela12:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela13 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela13:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela14 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela14:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
+  input#estrela15 + label {
+    background-image: url('./img/estrelapreta.png');
+  }
+  input#estrela15:checked + label {
+      background-image: url('./img/estrelaamarela.png');
+  }
