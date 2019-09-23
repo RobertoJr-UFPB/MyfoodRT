@@ -126,60 +126,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="pizza">
                         <th scope="row">1</th>
                         <td>Pizza</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
+                        <td><a href="./modificar-produto.html"><img type="button" class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
                         <!--add imagem editar-->
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
+                        <td><img style="background-color: #ffffff;text-decoration: none;" type="button" onclick=check(this.form) class="img-footer" src="../img/home/lx3.png" alt=""></td>
                         <!--ADD imagem lixeira-->
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Bolo</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Suco de Laranja</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Hanburguer</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Refrigerante</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Bolo de Chocolate</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Pastel de Frango</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Escondidinho de Macacheira com Carne de Sol</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td>Torda de Camarão</td>
-                        <td><a href="./modificar-produto.html"><img class="img-footer" src="../img/home/lapis-caderno.png" alt=""></a></td>
-                        <td><a href=""><img class="img-footer" src="../img/home/lx3.png" alt=""></a></td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -189,7 +144,7 @@
         <div id="img-form-edit" class="row form-crud-produto">
 
         </div>
-        <div align="end"><button style="border-radius: 5px !important;" type="submit" class="btn btn-primary btn-submeter">Adicinar Novo Produto</button>
+        <div align="end"><a href="./cadastrar-produto.html"><button style="border-radius: 5px !important;" type="submit" class="btn btn-primary btn-submeter">Adicinar Novo Produto</button></a>
         </div>
     </section>
     <!-- Fim Cadastrar Produto -->
@@ -216,8 +171,14 @@
         </div>
         </div>
     </footer>
-
+    <script language="JavaScript">
+         function check(form){
+            document.getElementById('pizza').remove()
+         }
+        
+    </script>
     <script>
+        
         function showNav() {
             document.getElementById("nav-vertical-fornecedor").style.display = "block";
         }
