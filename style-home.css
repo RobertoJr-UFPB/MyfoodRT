@@ -1,9 +1,9 @@
-body{
+body,html{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: auto;
-
+    height: 100%;
+    overflow-x: hidden;
 
 }
 /* NavBar */
@@ -28,13 +28,15 @@ body{
 
 }
  /* NavVertical */
- #nav-vertical{
+ #nav-vertical-fornecedor, #nav-vertical-cliente{
     float: right;
-    background-color: white;
+    background-color: #f8f9fa;
     height: 90vh;
     width: 200px;
     display: none;
-
+    position: absolute;
+    right: 15px;
+    z-index: 99999999999999999;
  }
  .nav-link{
     color: black !important;
@@ -88,7 +90,9 @@ body{
      padding-left: 60px;
      background-color: #F95F62;
      color: white;
-
+     bottom: 0px;
+    
+     width: 100%;
  }
  #logo-footer{
     width: 200px;

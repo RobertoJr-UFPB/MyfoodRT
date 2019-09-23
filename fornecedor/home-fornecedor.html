@@ -20,40 +20,37 @@
 </head>
 
 <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="../img/logo.png" style="height: 80px;width: 80px;margin: -30px"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fornecedores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carrinho</a>
-                    </li>
-    
-                    <form id="form-pesquisa" class="form-inline my-2 my-lg-0">
-    
-                        <i style="margin-right: 10px;" class="fas fa-search"></i>
-    
-    
-                        <input style="border:none; box-shadow: 0 0 0 0;border: 0 none;outline: 0;color:white;" id="input-pesquisa" class="form-control mr-sm-2" type="search"
-                            placeholder=" Pesquisar" aria-label="Search">
-    
-                    </form>
-            </div>
-    
-    
-    
+   <!-- NavBar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../img/logo.png" style="height: 80px;width: 80px;margin: -30px"
+            alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../home.html#slide-fornecedores">Fornecedores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../carrinho/carrinho.html">Carrinho</a>
+            </li>
+
+            <form id="form-pesquisa" class="form-inline my-2 my-lg-0">
+
+                <a href="../pesquisa/pesquisa.html"><i style="margin-right: 10px;text-decoration: none;color:white;" class="fas fa-search"></i></a>
+
+
+                <input style="border:none; box-shadow: 0 0 0 0;border: 0 none;outline: 0;color:white;"
+                    id="input-pesquisa" class="form-control mr-sm-2" type="search" placeholder=" Pesquisar"
+                    aria-label="Search">
+
+            </form>
             <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -67,33 +64,50 @@
                 </div>
             </div>
             </ul>
-            <img onclick="showNav()" id="persona" style="height: 50px;width:50px;" src="../img/home/persona.png" alt="">
-            <ul class="navbar-nav ">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" onclick="showNav()">
-                        Nome
-                    </a>
-                </li>
-            </ul>
+    </div>
+
+
+
     
-            </div>
-    
-        </nav>
-    
-        <div id="nav-vertical">
-            <img style="color:#F95F62;height: 40px;width: 40px;float: right;" onclick="escondeNav()"
-                src="../img/home/times-solid.svg" alt="">
-    
-    
-            <nav style="margin-top: 50px;" class="nav flex-column">
-                <a class="nav-link" href="#">Editar Perfil</a>
-                <a class="nav-link" href="#">Histórico de Pedidos</a>
-                <a class="nav-link" href="#">Cardápio</a>
-                <a class="nav-link " href="#">Sair</a>
-            </nav>
-        </div>
-        <!-- Fim NavBar -->
+    <img onclick="showNav2()" id="persona" style="height: 50px;width:50px;" src="../img/home/persona.png" alt="">
+    <ul class="navbar-nav ">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" onclick="showNav()">
+                Nome
+            </a>
+        </li>
+    </ul>
+
+    </div>
+
+</nav>
+
+<div id="nav-vertical-fornecedor">
+    <img style="color:#F95F62;height: 40px;width: 40px;float: right;" onclick="escondeNav()"
+        src="../img/home/times-solid.svg" alt="">
+
+
+    <nav style="margin-top: 50px;" class="nav flex-column">
+        <a class="nav-link" href="../edicao-de-perfil/edit-perfil-fornecedor.html">Editar Perfil</a>
+        <a class="nav-link" href="../historico/historico-pedidos-realizados.html">Pedidos Realizados</a>
+        <a class="nav-link" href="../historico/historico-pedidos-recebidos.html">Pedidos Recebidos</a>
+        <a class="nav-link" href="../cardapio/listar-cardapio.html">Cardápio</a>
+        <a class="nav-link " href="../login.html">Sair</a>
+    </nav>
+</div>
+<div id="nav-vertical-cliente">
+    <img style="color:#F95F62;height: 40px;width: 40px;float: right;" onclick="escondeNav2()"
+        src="../img/home/times-solid.svg" alt="">
+
+
+    <nav style="margin-top: 50px;" class="nav flex-column">
+        <a class="nav-link" href="../edicao-de-perfil/edit-perfil-cliente.html">Editar Perfil</a>
+        <a class="nav-link" href="../historico/historico-pedidos-realizados.html">Pedidos Realizados</a>
+        <a class="nav-link " href="../login.html">Sair</a>
+    </nav>
+</div>
+<!-- Fim NavBar -->
 
     <!-- Section Apresentação -->
     <section id="fornecedor" class="background-laranja">
@@ -238,10 +252,10 @@
             </div>
             <div class="col-2"></div>
             <div id="links-footer" class="col-2">
-                <a href="#">Home</a><br>
-                <a href="#">Fornecedores</a><br>
-                <a href="#">Carrinho</a><br>
-                <a href="#">Pesquisa</a>
+                <a href="../home.html">Home</a><br>
+                <a href="../home.html#slide-forcedores">Fornecedores</a><br>
+                <a href="../carrinho/carrinho.html">Carrinho</a><br>
+                <a href="../pesquisa/pesquisa.html">Pesquisa</a>
             </div>
             <div class="col-2"></div>
             <div class="col-4">
