@@ -113,7 +113,7 @@ input#estrela2 + label {
   input#estrela9 + label {
     background-image: url('./img/estrelapreta.png');
   }
-  input#estrel9:checked + label {
+  input#estrela9:checked + label {
       background-image: url('./img/estrelaamarela.png');
   }
   input#estrela10 + label {
